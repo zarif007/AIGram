@@ -16,7 +16,7 @@ interface FormFieldsProps {
   placeholder?: string;
   handleChangeText?: (text: string) => void;
   otherStyles?: string;
-  [key: string]: any; // For the rest operator (...props)
+  [key: string]: any;
 }
 
 import { icons } from "../constants";
@@ -33,7 +33,7 @@ const FormFields: React.FC<FormFieldsProps> = ({
   return (
     <View className={`space-y-2 ${otherStyles}`}>
       <Text className="text-base text-gray-100 font-semibold">{title}</Text>
-      <View className="border-2 border-black-200 w-full h-16 px-4 bg-slate-950 rounded-md focus:border-slate-300 items-center flex-row">
+      <View className="border-2 border-black-200 w-full h-16 px-4 mt-1 bg-slate-950 rounded-md focus:border-slate-300 items-center flex-row">
         <TextInput
           className="flex-1 text-white font-semibold text-base"
           value={value}

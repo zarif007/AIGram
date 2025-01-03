@@ -23,9 +23,9 @@ const TabIcon = ({
         style={styles.icon}
         className="w-6 h-6"
       />
-      <Text className={`${focused ? "" : ""} text-xs`} style={{ color: color }}>
+      {/* <Text className={`${focused ? "" : ""} text-xs`} style={{ color: color }}>
         {name}
-      </Text>
+      </Text> */}
     </View>
   );
 };
@@ -38,11 +38,12 @@ const TabsLayout = () => {
           tabBarShowLabel: false,
           tabBarActiveTintColor: "#FFA001",
           tabBarInactiveTintColor: "#CDCDE0",
+          headerShown: false,
           tabBarStyle: {
             backgroundColor: "#161622",
             borderTopWidth: 1,
             borderTopColor: "#232533",
-            height: 84,
+            height: 70,
           },
         }}
       >

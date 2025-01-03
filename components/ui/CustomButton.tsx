@@ -14,7 +14,7 @@ const CustomButton = ({
     <TouchableOpacity
       onPress={handlePress}
       activeOpacity={0.7}
-      className="my-2 bg-gray-50 w-full rounded-xl min-h-[62px] justify-center items-center"
+      className="my-2 bg-gray-50 w-full rounded-md min-h-[62px] justify-center items-center"
     >
       <Text className="text-primary font-semibold text-lg">{title}</Text>
     </TouchableOpacity>
